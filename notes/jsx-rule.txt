@@ -1,0 +1,5 @@
+JSX RULE
+you must close all tag , even an img
+you must return only one parent from a component in JSX
+you should wrap the return statements() if its more than a line
+working with classes you go with "classeName" not "class" like in html

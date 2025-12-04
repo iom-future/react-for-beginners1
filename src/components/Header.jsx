@@ -2,9 +2,12 @@ const Header = () => {
     return <div>
         <h1>welcome to my website</h1>
         <nav>
-            <li>Home</li>
-            <li>contact</li>
-            <li>about</li>
+            
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
         </nav>
     </div>
 }
