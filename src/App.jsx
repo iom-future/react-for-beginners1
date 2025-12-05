@@ -3,10 +3,11 @@
 
 import UserList from "./components/UserList.jsx"
 import ProductList from "./components/ProductList.jsx";
+import Renderchallenge from "./components/RenderChallenge.jsx"
 function App() {
     return(<div>
-     <UserList />
-     <ProductList/>
+     <Renderchallenge />
+     
     </div>);
 }
 
