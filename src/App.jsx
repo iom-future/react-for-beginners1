@@ -6,10 +6,11 @@ import MainContent from "./components/MainContent.jsx"
 import Footer from "./components/Footer.jsx"
 import WelcomeMessage from "./components/WelcomeMessage.jsx"
 import JSXRule from "./components/JSXRule.jsx"
+import ProductInfo from "./components/ProductInfo.jsx"
 function App() {
     return(<div>
-     <WelcomeMessage/>
-     <JSXRule />
+     <Greet/>
+     <ProductInfo />
     </div>);
 }
 

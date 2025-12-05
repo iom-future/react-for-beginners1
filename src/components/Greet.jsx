@@ -1,5 +1,13 @@
 function Greet() {
-    return <h1>hello world</h1>
+    let greeting="Hello World";
+    let date = new Date();
+    return (
+        <div>
+             <h1>{greeting}</h1>
+             <p>{date.toDateString()}</p>
+        </div>
+       
+    );
 }
 
 export default Greet
