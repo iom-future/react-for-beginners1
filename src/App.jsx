@@ -1,15 +1,10 @@
-//Registering a component
-//1. import it
-
-import Weather from "./components/Weather";
-import UserStatus from "./components/UserStatus";
-import Greeting from "./components/Greeting";
+import Style from "./components/Style";
+import "./index.css "
 function App() {
     return(<div>
-        <Weather temp={21} />
-        <UserStatus isAdmin={false} isLogged={true}/>
-        <Greeting timeOfDay ="morning"/>
+       <h1 style ={{color:"red", backgroundColor: "teal" }}> style</h1>
 
+        <Style/>
     </div>);
 }
 
