@@ -1,10 +1,13 @@
-import Style from "./components/Style";
-import "./index.css "
+import TodoList from "./components/TodoList.jsx";
+import Counter from "./components/Counter.jsx";
+import Profile from "./components/Profile.jsx";
+import ShoppingList from "./components/ShoppingList.jsx";
 function App() {
     return(<div>
-       <h1 style ={{color:"red", backgroundColor: "teal" }}> style</h1>
-
-        <Style/>
+        <Counter />
+        <TodoList/> 
+        <Profile />
+        <ShoppingList />
     </div>);
 }
 
