@@ -1,8 +1,11 @@
-
-import CopyText from "./components/CopyText.jsx"
+import BasicEffect from "./components/BasicEffect.jsx";
+import CounterEffect from "./components/CounterEffect.jsx";
+import FetchDataEffect from "./components/FetchDataEffect.jsx";
 function App() {
     return(<div>
-        <CopyText />
+        < BasicEffect />
+        < CounterEffect />
+        <FetchDataEffect />
     </div>);
 }
 
