@@ -1,9 +1,9 @@
 import React from 'react'
 import ComponentB from './ComponentB'
-function ComponentA({data}) {
+function ComponentA() {
   return (
     <div>
-        <ComponentB data={data} />
+        <ComponentB/>
     </div>
   )
 }

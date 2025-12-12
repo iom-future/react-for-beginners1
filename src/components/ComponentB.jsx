@@ -1,8 +1,8 @@
 import ComponentC from "./ComponentA"
-function ComponentB({data}) {
+function ComponentB() {
   return (
     <div>
-        <ComponentC data={data}/>
+        <ComponentC />
     </div>
   )
 }
