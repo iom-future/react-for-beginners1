@@ -1,20 +1,19 @@
-//USING CONTEXT API WITH USECONTEXT() HOOK
-import { createContext } from "react"; //import the context API
-import ComponentA from "./components/ComponentA.jsx";
-
-export const ContextAPI = createContext() //create an instance of the context object
-export const ContextAPI1 = createContext() //create a second instance of the context object
+import UserProvider from "./components/UserContext.jsx";
+import UpdateUser from "./components/UpdateUser.jsx";
+import UserProfile from "./components/UserProfile.jsx";
 function App() {
-    let dataToDeeplyNestedComponent = "prop for component C";
-    let  dataToDeeplyNestedComponent1 = "second prop for component C"
     return(<div>
-        <ContextAPI.Provider value={dataToDeeplyNestedComponent}>
-            <ContextAPI1.Provider value={dataToDeeplyNestedComponent1} >
-                 <ComponentA />
-            </ContextAPI1.Provider>
-           
-        </ContextAPI.Provider>
-       {/* we are drilling this data into componentC  */}
+        <UserProvider>
+            {/* anything here is a child of the UserProvider component, and it will be passed as a prop to it 
+                : ({children})=>{
+                     //UserProvider code
+                    }
+                    the destructured children in the parameter parenthesis, are the component placed in between the UserProvider tags right here
+            */}
+            <UpdateUser />
+            <UserProfile />
+        </UserProvider>
+
 
     </div>);
 }

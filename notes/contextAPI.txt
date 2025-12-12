@@ -1,0 +1,21 @@
+The context API is like a portal
+
+the UserContext.jsx if the building where we create the portal, it has:
+    the engine: export let UserContext = createContext();
+    the portal structure(just like the container where the engine is): this is the UserProvider component
+    the value attribute of the engine, is what is teleported to various building(component file)
+
+The portal is the used in App as follows:
+     <UserProvider>
+            <UpdateUser />
+            <UserProfile />
+    </UserProvider>
+
+    the provider component is the building(the portal) so the things inside it[when its been used] are where the data(in value attribute) will be teleported to
+
+The data teleported:
+    in the component where the data was teleported to in the portal, you can use it by getting the package:
+    import { UserContext } from "./UserContext.jsx" //getting the package
+
+    then use the use context hook to unpackage, and finally get the raw data:  let {userName} =useContext(UserContext)
+
