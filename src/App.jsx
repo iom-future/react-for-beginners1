@@ -1,4 +1,4 @@
-//USING CONTEXT API
+//USING CONTEXT API WITH USECONTEXT() HOOK
 import { createContext } from "react"; //import the context API
 import ComponentA from "./components/ComponentA.jsx";
 

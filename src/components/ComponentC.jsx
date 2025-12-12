@@ -1,25 +1,31 @@
-import React from 'react'
+
+//USING CONTEXT API WITH USECONTEXT() HOOK
+import { useContext } from 'react'
 //import the contextAPI where ever you need the prop
 import { ContextAPI, ContextAPI1 } from '../App'
 function ComponentC() {
+    let propData = useContext(ContextAPI);
+    let propData1 = useContext(ContextAPI1);
   return (
     <div>
-        <ContextAPI.Consumer>
-           {/* each ContextAPI.Consumer component must start/have with a call back function, and the call back function must return something/what consumes/uses the prop data */}
-                {(propFromContextAPI)=>{
-                    return(
-                        <ContextAPI1>
-                            {(propFromContextAPI1)=>{
-                                    return <h2>this is prop data 1: {propFromContextAPI}, this is prop data 2: {propFromContextAPI1}</h2>
-                            }}
-                        </ContextAPI1>
-                    )
-                }}
-           
-                
-        </ContextAPI.Consumer>
+        <h2>this is prop data 1: {propData}, this is prop data 2: {propData1}</h2>
    </div>
   )
 }
 
 export default ComponentC
+
+/* 
+when you pass a prop without using contextAPI or useContext you get you prop as an object
+<ComponentA name={isaac} /> 
+import it into another comoponent
+ const ComponentB = (props){
+ prop is an object
+    props = {
+        name: "isaac"
+    }
+ }
+
+ but when  passing prop to using useContext and contextAPI, props get passed as the value i self than a whole object
+
+*/
