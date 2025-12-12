@@ -1,11 +1,9 @@
-import BasicEffect from "./components/BasicEffect.jsx";
-import CounterEffect from "./components/CounterEffect.jsx";
-import FetchDataEffect from "./components/FetchDataEffect.jsx";
+
+import ComponentA from "./components/ComponentA.jsx";
 function App() {
+    let dataToDeeplyNestedComponent = "data for component C"
     return(<div>
-        < BasicEffect />
-        < CounterEffect />
-        <FetchDataEffect />
+       <ComponentA data={dataToDeeplyNestedComponent} />
     </div>);
 }
 
