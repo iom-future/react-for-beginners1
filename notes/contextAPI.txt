@@ -11,7 +11,8 @@ The portal is the used in App as follows:
             <UserProfile />
     </UserProvider>
 
-    the provider component is the building(the portal) so the things inside it[when its been used] are where the data(in value attribute) will be teleported to
+    the provider component is the building(the portal) so the things inside it[whe
+    n its been used] are where the data(in value attribute) will be teleported to
 
 The data teleported:
     in the component where the data was teleported to in the portal, you can use it by getting the package:
